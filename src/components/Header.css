@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+
+@keyframes fade-in-up {
+  from {
+    transform: translateY(45%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    transform: translateY(-45%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0.5% 0;
+  font-size: 1.5rem;
+}
+
+header {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p span {
+  color: #ed5940;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Source Code Pro", monospace;
+}
+
+h1 span {
+  font-size: 1em;
+}
+
+#description {
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 1.5%;
+  opacity: 0;
+  animation: fade-in-down 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.7s;
+}
+
+a {
+  margin-top: 6%;
+  font-size: 0.65em;
+  width: fit-content;
+  padding: 15px 50px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-color: #ed5940;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in-up 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+a:hover {
+  background-color: transparent;
+  color: #ed5940;
+  border: 2px solid #ed5940;
+}
+
+#name {
+  opacity: 0;
+  animation: fade-in-up 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
+}
