@@ -1,0 +1,51 @@
+section {
+  margin-bottom: 5% !important;
+  border-radius: 15px;
+}
+
+.innerSectionMargin {
+  margin: 0 6.5% 0 10%;
+  padding: 5% 0;
+}
+
+.sectionTitle {
+  margin-top: 1%;
+  margin-bottom: 3%;
+  text-transform: capitalize;
+}
+
+.expArticle {
+  margin-bottom: 2%;
+}
+
+.expArticle *:not(ul) {
+  font-size: 0.45em;
+}
+
+.expArticle p:first-child {
+  font-size: 0.65em;
+}
+
+.role {
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 2%;
+  margin-top: 0.5%;
+}
+
+ul {
+  line-height: 0.85em;
+  margin-bottom: 6.5%;
+}
+
+.Collapsible span {
+  cursor: pointer;
+  font-size: 0.45em;
+}
+
+.Collapsible span:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 1em;
+}

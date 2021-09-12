@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 class Header extends React.Component {
   render() {
     return (
-      <header>
+      <header id="header">
         <p id="name">
           I'm <span>Wai Bin.</span>
         </p>
