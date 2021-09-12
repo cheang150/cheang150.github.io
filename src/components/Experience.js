@@ -1,6 +1,8 @@
 import React from "react";
 import "./Experience.css";
 import Collapsible from "react-collapsible";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 class Experience extends React.Component {
   constructor(props) {
@@ -8,6 +10,10 @@ class Experience extends React.Component {
     this.state = {
       open: false,
     };
+  }
+
+  componentDidMount() {
+    Aos.init({ offset: 200 });
   }
 
   render() {
@@ -28,7 +34,11 @@ class Experience extends React.Component {
     };
 
     return (
-      <section id={this.props.id} style={sectionStyle}>
+      <section
+        id={this.props.id}
+        style={sectionStyle}
+        data-aos={this.props.alignLeft ? "fade-right" : "fade-left"}
+      >
         <div className="innerSectionMargin" style={innerSectionStyle}>
           <img
             src={this.props.icon}
