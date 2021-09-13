@@ -5,21 +5,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 class Experience extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      open: false,
-    };
-  }
-
   componentDidMount() {
-    Aos.init({ offset: 200 });
+    Aos.init();
   }
 
   render() {
     const sectionStyle = {
       backgroundColor: this.props.bgColor,
-      margin: this.props.alignLeft ? "0 15% 0 0" : "0 0 0 15%",
+      margin: this.props.alignLeft ? "0 10% 0 0" : "0 0 0 10%",
     };
 
     const iconStyle = {

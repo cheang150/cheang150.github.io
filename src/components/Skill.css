@@ -1,0 +1,36 @@
+.skillArticle {
+  margin-bottom: 2%;
+}
+
+.skillArticle p:first-child {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 0.45em;
+  font-weight: 500;
+  margin-top: 6.5%;
+}
+
+figure {
+  width: 150px;
+  height: 165px;
+  border-radius: 30px;
+  margin-top: 2.1%;
+  margin-right: 2.1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figure img {
+  width: 50%;
+  height: 50%;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
