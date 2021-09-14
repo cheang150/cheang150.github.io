@@ -1,0 +1,117 @@
+footer {
+  margin: 0 10%;
+}
+
+.actualSection {
+  background-color: #fbf1f4;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+#faq {
+  position: relative;
+  z-index: 1;
+  top: 11px;
+  left: 5%;
+  width: 150px;
+}
+
+#blob {
+  position: absolute;
+  z-index: 3;
+  width: 85%;
+  transform: rotate(-30deg);
+  right: -85px;
+  top: -100px;
+}
+
+footer a:not(.profile) {
+  margin: 0;
+  margin-right: 9%;
+  z-index: 4;
+}
+
+.actualSection article {
+  margin: 5% 0;
+  margin-left: 9%;
+  z-index: 4;
+}
+
+.actualSection p {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 0.65em;
+  margin-top: 4%;
+}
+
+.actualSection h1 {
+  font-size: 1.2em;
+}
+
+.contactInfo {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.contactInfo * {
+  font-size: 0.65em;
+  margin: 6px;
+}
+
+.contactInfo p:first-child {
+  font-weight: 600;
+}
+
+.contactInfo p:nth-child(2) {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 0.45em;
+  margin-top: 3%;
+}
+
+.contactInfo p:nth-child(4) {
+  font-size: 0.45em;
+  margin-top: 8.5px;
+}
+
+.contactInfo img {
+  width: 22px;
+  height: 22px;
+}
+
+footer figure {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#instagram {
+  background-color: rgba(152, 74, 195, 0.1);
+}
+
+#instagram:hover {
+  box-shadow: 0 0 10px 5px rgba(152, 74, 195, 0.25);
+}
+
+#linkedin {
+  background-color: rgba(0, 118, 181, 0.1);
+}
+
+#linkedin:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 118, 181, 0.25);
+}
+
+#github {
+  margin-top: 3%;
+  background-color: rgba(234, 76, 137, 0.1);
+}
+
+#github:hover {
+  box-shadow: 0 0 10px 5px rgba(234, 76, 137, 0.25);
+}

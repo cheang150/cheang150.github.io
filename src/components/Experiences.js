@@ -38,8 +38,8 @@ class Experiences extends React.Component {
         name: "Inari Technology Sdn Bhd",
         role: "Production Technician",
         descriptions: [
-          "Coordinated effectively with a production engineer to streamline an automated extract-transform-load process to push data from machines’ log files to database.",
-          "Modelled and visualize data extracted from log files and successfully create business values that lead to 30% headcount reduction with Pandas and Seaborn.",
+          "Coordinated effectively with a production engineer to streamline an automated extract-transform-load process to push datas from machines’ log files to database.",
+          "Modelled and visualize data extracted from log files and successfully create business values that lead to 30% workforce reduction with Pandas and Seaborn.",
           "Automate manual back-office processing through VBA scripting and automation engine.",
         ],
       },

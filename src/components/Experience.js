@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 class Experience extends React.Component {
   componentDidMount() {
-    Aos.init();
+    Aos.init({ easing: "ease-in-out" });
   }
 
   render() {
@@ -37,18 +37,34 @@ class Experience extends React.Component {
             src={this.props.icon}
             alt={this.props.id + " icon"}
             style={iconStyle}
+            data-aos={this.props.alignLeft ? "fade-right" : "fade-left"}
           />
-          <h1 className="sectionTitle">{this.props.id}</h1>
+          <h1
+            className="sectionTitle"
+            data-aos={this.props.alignLeft ? "fade-right" : "fade-left"}
+          >
+            {this.props.id}
+          </h1>
 
           <article className="expArticle">
-            <p>{this.props.datas[0].name}</p>
-            <p className="role">{this.props.datas[0].role}</p>
+            <p data-aos={this.props.alignLeft ? "fade-right" : "fade-left"}>
+              {this.props.datas[0].name}
+            </p>
+            <p
+              className="role"
+              data-aos={this.props.alignLeft ? "fade-right" : "fade-left"}
+            >
+              {this.props.datas[0].role}
+            </p>
             <ul>
               {this.props.datas[0].descriptions.map((description) => (
-                <li>{description}</li>
+                <li
+                  data-aos={this.props.alignLeft ? "fade-right" : "fade-left"}
+                >
+                  {description}
+                </li>
               ))}
             </ul>
-            {/* <span className="expandButton">SEE MORE</span> */}
           </article>
           <Collapsible trigger="SEE MORE" triggerWhenOpen="">
             {this.props.datas.slice(1).map((data) => {

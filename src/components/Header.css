@@ -53,7 +53,7 @@ header h1 span {
   animation-delay: 1.7s;
 }
 
-a {
+a:not(.profile) {
   margin-top: 6%;
   font-size: 0.65em;
   width: fit-content;
@@ -64,16 +64,19 @@ a {
   background-color: #ed5940;
   color: white;
   text-align: center;
+}
+
+a:hover:not(.profile) {
+  background-color: transparent;
+  color: #ed5940;
+  border: 2px solid #ed5940;
+}
+
+.buttonAnimation {
   opacity: 0;
   animation: fade-in-up 1s;
   animation-fill-mode: forwards;
   animation-delay: 2.5s;
-}
-
-a:hover {
-  background-color: transparent;
-  color: #ed5940;
-  border: 2px solid #ed5940;
 }
 
 #name {

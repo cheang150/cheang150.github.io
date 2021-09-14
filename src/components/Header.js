@@ -13,7 +13,7 @@ class Header extends React.Component {
           <Typewriter words={["> Hello;"]} />
         </h1>
         <p id="description">A Passionate Software Developer.</p>
-        <a href="#" download>
+        <a href="#" className="buttonAnimation" download>
           Get CV
         </a>
       </header>

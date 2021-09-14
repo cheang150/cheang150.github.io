@@ -10,7 +10,7 @@ class Skill extends React.Component {
             return (
               <figure
                 style={{ backgroundColor: data.color }}
-                data-aos="fade-up"
+                data-aos="fade-right"
               >
                 <img src={data.src} alt={data.name} />
                 <p className="description">{data.name}</p>
